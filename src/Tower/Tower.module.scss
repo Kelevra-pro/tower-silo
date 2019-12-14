@@ -1,0 +1,49 @@
+p {
+  color: #fff;
+}
+
+.tower {
+  display: inline-block;
+  margin: 0 20px;
+  width: 156px;
+  text-align: center;
+  white-space: normal;
+}
+
+.title, .titleValue {
+  font-size: 14px;
+}
+
+.percentValue, .value {
+  margin: 0;
+  font-size: 26px;
+}
+
+.statusBar {
+  width: 68px;
+  height: 3px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.statusBar.positive {
+  background-color: #21B149;
+}
+
+.statusBar.negative {
+  background-color: red;
+}
+
+.statusBarMainWrap {
+  position: relative;
+}
+
+.statusBarMain {
+  position: absolute;
+  bottom: 92px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 118px;
+  background-color: rgba(33, 178, 73, 0.5);
+}
