@@ -15,7 +15,8 @@ export default class Tower extends Component {
     };
 
     getStatusBarHeight(value) {
-        return value * 390 / fullTankValue;
+        const maxPixelHeight = 390;
+        return value * maxPixelHeight / fullTankValue;
     };
 
     render() {
