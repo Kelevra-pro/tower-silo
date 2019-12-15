@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 import TowerImage from '../TowerImage/TowerImage';
 import classes from './Tower.module.scss';
 
+const fullTankValue = 1500;
+
 export default class Tower extends Component {
-    // 1500 лучше вынести в константу (напр fullTankValue) чтобы
-    // 1 -  при изменении кода не забыть поменять в разных местах
-    // 2 - по имени быдет понтятнее, что это
 
     getPercent(value) {
-        return Math.round(value * 100 / 1500);
+        return Math.round(value * 100 / fullTankValue);
     };
 
     getStatusBarClass(value, minValue, maxValue) {
@@ -16,7 +15,7 @@ export default class Tower extends Component {
     };
 
     getStatusBarHeight(value) {
-        return value * 390 / 1500;
+        return value * 390 / fullTankValue;
     };
 
     render() {
