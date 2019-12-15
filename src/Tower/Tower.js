@@ -3,53 +3,42 @@ import TowerImage from '../TowerImage/TowerImage';
 import classes from './Tower.module.scss';
 
 export default class Tower extends Component {
+    // 1500 лучше вынести в константу (напр fullTankValue) чтобы
+    // 1 -  при изменении кода не забыть поменять в разных местах
+    // 2 - по имени быдет понтятнее, что это
 
-    calcPercent(value) {
-        return Math.round(value * 100 / 1500)
+    getPercent(value) {
+        return Math.round(value * 100 / 1500);
     };
 
-    isValueInRange(value, minValue, maxValue) {
-        if (value >= minValue && value <= maxValue) {
-            return classes.positive;
-        } else {
-            return classes.negative;
-        }
+    getStatusBarClass(value, minValue, maxValue) {
+        return (value >= minValue && value <= maxValue) ? classes.positive : classes.negative;
     };
 
-    calcStatusBarHeight(value) {
-        return value * 390 / 1500
+    getStatusBarHeight(value) {
+        return value * 390 / 1500;
     };
 
     render() {
         const {tower} = this.props;
 
         return (
-            <div key={tower.id} className={classes.tower}>
+            <div className={classes.tower}>
                 <p className={classes.title}>{tower.title}</p>
-                <p className={classes.percentValue}>{this.calcPercent(tower.value)}%</p>
-                <hr
-                    className={`${classes.statusBar}
-                         ${this.isValueInRange(tower.value, tower.minValue, tower.maxValue)}`}
-                />
+                <p className={classes.percentValue}>{this.getPercent(tower.value)}%</p>
+                <hr className={`${classes.statusBar} ${this.getStatusBarClass(tower.value, tower.minValue, tower.maxValue)}`}/>
                 <div className={classes.statusBarMainWrap}>
-                    <TowerImage
-                        width="156"
-                        height="618"
-                        viewBox="0 0 156 618"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    />
+                    <TowerImage/>
                     <div
                         className={classes.statusBarMain}
-                        style={{height: this.calcStatusBarHeight(tower.value)}}
+                        style={{height: this.getStatusBarHeight(tower.value)}}
                     />
                 </div>
                 <p className={classes.titleValue}>Масса карналита</p>
                 <p className={classes.value}>{tower.value}</p>
-                <hr
-                    className={`${classes.statusBar}
-                         ${this.isValueInRange(tower.value, tower.minValue, tower.maxValue)}`}
-                />
+                {/* В условиях задачи, сказано менять цвет линии статуса только под процентами.
+                В реальной работе над проектом я бы уточнил, нужно ли менять цвет линии в строчке ниже. */}
+                <hr className={`${classes.statusBar} ${classes.positive}`}/>
             </div>
         )
     }

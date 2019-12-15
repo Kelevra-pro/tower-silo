@@ -1,7 +1,3 @@
-p {
-  color: #fff;
-}
-
 .tower {
   display: inline-block;
   margin: 0 20px;
@@ -22,16 +18,16 @@ p {
 .statusBar {
   width: 68px;
   height: 3px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   border: none;
 }
 
 .statusBar.positive {
-  background-color: #21B149;
+  background-color: #21b149;
 }
 
 .statusBar.negative {
-  background-color: red;
+  background-color: #ed422c;
 }
 
 .statusBarMainWrap {

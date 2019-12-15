@@ -17,7 +17,10 @@ export default class TowerImage extends Component {
                 <path d="M54.5 2.59998H101.6" stroke="#8B959F" strokeWidth="4" strokeMiterlimit="22.9256"/>
                 <path
                     d="M76.7 479.1H26.2C20.7 479.1 16.2 474.6 16.2 469.1V445.2C16.2 439.7 20.7 435.2 26.2 435.2H76.7C82.2 435.2 86.7 439.7 86.7 445.2V469.1C86.7 474.6 82.2 479.1 76.7 479.1Z"
-                    stroke="#21B149" strokeWidth="3" strokeMiterlimit="10"/>
+                    stroke="#21B149"
+                    strokeWidth="3"
+                    strokeMiterlimit="10"
+                />
                 <defs>
                     <linearGradient id="paint0_linear" x1="12.7258" y1="59.9563" x2="146.688" y2="59.947"
                                     gradientUnits="userSpaceOnUse">

@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import Layout from './Layout/Layout';
+import TowerList from './TowerList/TowerList';
 
 class App extends Component {
     render() {
-        return (
-            <Layout/>
-        )
+        return <TowerList/>;
     }
 }
 

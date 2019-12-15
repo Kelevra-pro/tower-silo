@@ -16,7 +16,6 @@ export default class TowerList extends Component {
                     this.setState({towers})
                 });
         } catch (e) {
-            console.log(e);
         }
     }
 
@@ -27,7 +26,8 @@ export default class TowerList extends Component {
                     <Tower
                         key={tower.id}
                         tower={tower}
-                    />)}
+                    />
+                )}
             </div>
         )
     }
