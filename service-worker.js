@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tower-silo/precache-manifest.303b771dc31e1cbd7d8de6bab65caec3.js"
+  "/tower-silo/precache-manifest.4e9da81a188dfc71c284799bd3468751.js"
 );
 
 self.addEventListener('message', (event) => {
