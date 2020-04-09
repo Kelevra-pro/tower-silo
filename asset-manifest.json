@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/tower-silo/static/css/main.99d1f697.chunk.css",
-    "main.js": "/tower-silo/static/js/main.3de35080.chunk.js",
-    "main.js.map": "/tower-silo/static/js/main.3de35080.chunk.js.map",
+    "main.js": "/tower-silo/static/js/main.caf33645.chunk.js",
+    "main.js.map": "/tower-silo/static/js/main.caf33645.chunk.js.map",
     "runtime-main.js": "/tower-silo/static/js/runtime-main.8555a217.js",
     "runtime-main.js.map": "/tower-silo/static/js/runtime-main.8555a217.js.map",
-    "static/js/2.c6baa63f.chunk.js": "/tower-silo/static/js/2.c6baa63f.chunk.js",
-    "static/js/2.c6baa63f.chunk.js.map": "/tower-silo/static/js/2.c6baa63f.chunk.js.map",
+    "static/js/2.04e18d3f.chunk.js": "/tower-silo/static/js/2.04e18d3f.chunk.js",
+    "static/js/2.04e18d3f.chunk.js.map": "/tower-silo/static/js/2.04e18d3f.chunk.js.map",
     "index.html": "/tower-silo/index.html",
-    "precache-manifest.4e9da81a188dfc71c284799bd3468751.js": "/tower-silo/precache-manifest.4e9da81a188dfc71c284799bd3468751.js",
+    "precache-manifest.20b24d34b54720181ea7bfd77695daad.js": "/tower-silo/precache-manifest.20b24d34b54720181ea7bfd77695daad.js",
     "service-worker.js": "/tower-silo/service-worker.js",
     "static/css/main.99d1f697.chunk.css.map": "/tower-silo/static/css/main.99d1f697.chunk.css.map",
-    "static/js/2.c6baa63f.chunk.js.LICENSE.txt": "/tower-silo/static/js/2.c6baa63f.chunk.js.LICENSE.txt"
+    "static/js/2.04e18d3f.chunk.js.LICENSE.txt": "/tower-silo/static/js/2.04e18d3f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8555a217.js",
-    "static/js/2.c6baa63f.chunk.js",
+    "static/js/2.04e18d3f.chunk.js",
     "static/css/main.99d1f697.chunk.css",
-    "static/js/main.3de35080.chunk.js"
+    "static/js/main.caf33645.chunk.js"
   ]
 }
