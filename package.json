@@ -30,7 +30,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.4"
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.5.0",
